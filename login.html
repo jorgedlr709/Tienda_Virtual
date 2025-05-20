@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión - Tienda Gym</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo_login.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>Iniciar sesión</h2>
+    <form action="controllers/login.php" method="POST" autocomplete="off">
+      <label for="usuario" class="sr-only">Usuario</label>
+      <input
+        type="text"
+        id="usuario"
+        name="usuario"
+        placeholder="Usuario"
+        required
+        autofocus
+        autocapitalize="off"
+        spellcheck="false"
+      />
+      
+      <label for="contrasena" class="sr-only">Contraseña</label>
+      <input
+        type="password"
+        id="contrasena"
+        name="contrasena"
+        placeholder="Contraseña"
+        required
+      />
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <div class="links">
+      <p>¿No tienes cuenta? <a href="controllers/register.php">Regístrate</a></p>
+      <p><a href="index.php">Volver al inicio</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
